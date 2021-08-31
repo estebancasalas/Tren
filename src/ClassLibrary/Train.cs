@@ -15,7 +15,7 @@ namespace ClassLibrary
     {
         private static int contadorTrenes = 0;
         private string identificadorTren;
-        public int ContadorTrenes
+        public static int ContadorTrenes
         {
             get{return contadorTrenes;}
             set{contadorTrenes = value;}

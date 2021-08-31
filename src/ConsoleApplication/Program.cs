@@ -26,7 +26,7 @@ namespace ConsoleApplication
             {
                 ArrayDeTrenes.Add(new Train(i.ToString()));
             }
-            
+            Console.WriteLine(Train.ContadorTrenes);
         }
     }
 }
