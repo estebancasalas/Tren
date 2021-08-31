@@ -5,6 +5,7 @@
 //--------------------------------------------------------------------------------
 
 using System;
+using System.Collections;
 using ClassLibrary;
 
 namespace ConsoleApplication
@@ -18,10 +19,14 @@ namespace ConsoleApplication
         /// Punto de entrada al programa principal.
         /// </summary>
         public static void Main()
-        {
-            var train = new Train("1");
-            train.StartEngines();
+        { 
             Console.WriteLine("Hello World!");
+            ArrayList ArrayDeTrenes = new ArrayList();
+            for (int i=0; i<100; i++)
+            {
+                ArrayDeTrenes.Add(new Train(i.ToString()));
+            }
+            
         }
     }
 }
